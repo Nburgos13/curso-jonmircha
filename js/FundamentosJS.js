@@ -162,7 +162,7 @@ console.log(colores); //saca el ultimo elemento
 
 const objetosCreados = {}; // un objeto es una coleccion de llaves(propiedades) y valores, a comparacion del arreglo este comienza con {} llaves
 
-/*dentro de un objeto a las variables se le van a llmar atributos/propiedades y a las funciones se les llama métodos*/
+/*dentro de un objeto a las variables se le van a llamar atributos/propiedades y a las funciones se les llama métodos*/
 const nicolas = {
   nombre: "Nicolas",
   apellido: "Burgos",
@@ -176,3 +176,126 @@ const nicolas = {
 };
 
 console.log(nicolas.edad); //imprimir los valores
+
+//Tipos de Operadores
+
+/*Aritmeticos: + - * "/" % () */
+
+let letraA = 5 + 5;
+console.log(letraA);
+
+let modulo = 5 % 2;
+console.log(modulo); //Residuo de nuestra division
+
+/*Relacionales: >, <, >=, <=, ==, ===, !=, !==  */
+
+console.log(8 > 9);
+console - log(9 > 8);
+console.log(8 >= 9);
+
+/*
+= 1 igual es asignacion de variable
+== 2 iguales es comparacion de valores
+=== 3 iguales es comparacion de tipo de datos y valor "Es el recomendable"
+*/
+
+/* Incremento Decremento */
+
+let i = 1;
+i = i + 2;
+console.log(i);
+
+i += 3;
+console.log(i);
+
+//Operador unario
+
+i++;
+console.log(i);
+
+i--;
+++i; //aumenta en 1
+
+//logicos
+/*  
+  ! - Not : Niega, es decir lo que es verdadero lo vuelve falso y viceversa.
+  || - or : cuando tengo dos o mas condiciones, cuando una se cumpla, es decir, sea verdadera el or validara. 
+  && - and : cuando tengo dos o mas condiciones todas tienen que cumplirse, es decir, ser verdaderas para que AND se ejecute. 
+ */
+
+//Estructuras de control - Condicionales
+
+//Estructura de control: aquel mecanismo que permite control el flujo de programacion
+
+//if - else: permite tomar una decision, y si se cumple la condicion permite ejecutar el codigo.
+
+let edad = 17;
+
+if (edad > 17) {
+  console.log("Eres mayor de edad");
+} else {
+  console.log("Eres menor de edad");
+}
+
+/*Dejame dormir : 00hs - 05hs
+Buenos Dias: 06hs - 11hs
+Buenas Tardes: 12hs - 18hs
+Buenas Noches: 19hs - 23
+*/
+
+let hora = 5;
+
+if (hora >= 0 && hora <= 5) {
+  console.log("Dejame Dormir");
+} else if (hora >= 6 && hora <= 11) {
+  console.log("Buenos Dias");
+} else if (hora >= 12 && hora <= 18) {
+  console.log("Buenas Tardes");
+} else {
+  console.log("Buenas Noches");
+}
+
+/* Operador Ternario (condicion) ? verdadero : falso */
+
+console.log("Operador Ternario");
+let eresMayor = edad >= 18 ? "Eres mayor de edad" : "Eres menor de edad";
+console.log(eresMayor);
+
+//switch-case: diferente valores para una misma variable
+/*
+Domingo - 0
+Lunes - 1
+Martes - 2
+Miercoles - 3
+Jueves - 4
+Viernes - 5
+Sabado - 6
+ */
+let dia = 3;
+
+switch (dia) {
+  case 0:
+    console.log("Domingo");
+    break;
+  case 1:
+    console.log("Lunes");
+    break;
+  case 2:
+    console.log("Martes");
+    break;
+  case 3:
+    console.log("Miercoles");
+    break;
+  case 4:
+    console.log("Jueves");
+    break;
+  case 5:
+    console.log("Viernes");
+    break;
+  case 6:
+    console.log("Sabado");
+    break;
+  default:
+    console.log("El dia no existe");
+    break;
+}
